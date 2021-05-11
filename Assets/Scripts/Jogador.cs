@@ -20,9 +20,9 @@ public class Jogador : MonoBehaviour
     void Update()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertial = Input.GetAxis("Vertical");
-        Vector3 movimento = new Vector3(moveHorizontal, 0.0f, moveVertial);
-        transform.position = transform.position + (movimento * velocidade * Time.deltaTime);
+        float moveVertical = Input.GetAxis("Vertical");
+        Vector3 movimento = new Vector3( - moveHorizontal, 0.0f, - moveVertical);
+        //transform.position = transform.position + (- movimento * velocidade * Time.deltaTime);
         corpoRigido.AddForce(movimento * velocidade);
 
     }
