@@ -1,0 +1,641 @@
+fileFormatVersion: 2
+guid: fa5029dcecdc3c3409dd080c038be5e8
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 9ea4f2768020a4a49a11ee50c967b2f7
+  - e1e4a6fe8d6edbd4381a9f553cd20889
+  - e843c7c2de137b74f87c27730ea0026e
+  - 4ed94cc310a90fa4da39e43cf1d96690
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Lua_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lua_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: lua(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_geometria
+      parentName: lua(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Reference
+      parentName: lua(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Hips
+      parentName: Lua_Reference
+      position: {x: -0.0017382407, y: 0.972279, z: -0.029717855}
+      rotation: {x: -0.00039525537, y: -0.0013396492, z: 0.28298363, w: 0.95912373}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftUpLeg
+      parentName: Lua_Hips
+      position: {x: -0.057589926, y: 0.0000000020694662, z: 9.83032e-10}
+      rotation: {x: -0.6185141, y: -0.3406517, z: 0.33547163, w: 0.6235828}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftLeg
+      parentName: Lua_LeftUpLeg
+      position: {x: -0.41513923, y: 0.000000011350753, z: -0.0000002336502}
+      rotation: {x: 0, y: 0, z: -0.021628035, w: 0.9997661}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftFoot
+      parentName: Lua_LeftLeg
+      position: {x: -0.45116496, y: -0.0000000039158192, z: -0.00000028610228}
+      rotation: {x: 0.94035816, y: 0.34018615, z: 2.0831801e-17, w: 5.7579824e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftToeBase
+      parentName: Lua_LeftFoot
+      position: {x: -0.080142565, y: 0.000000004388758, z: 0.000000009536744}
+      rotation: {x: 0, y: 0, z: -0.46787807, w: 0.88379306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftFoot_End
+      parentName: Lua_LeftToeBase
+      position: {x: -0.065250956, y: 4.543234e-18, z: -9.201075e-18}
+      rotation: {x: 0.015586574, y: -0.706935, z: 0.015586574, w: 0.706935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Spine
+      parentName: Lua_Hips
+      position: {x: 0.08567555, y: 0.13385375, z: 0.0000019737265}
+      rotation: {x: -0, y: 0, z: 0.8783034, w: -0.47810373}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Spine1
+      parentName: Lua_Spine
+      position: {x: -0.12323783, y: -0.0000000073015403, z: 2.0393628e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Spine2
+      parentName: Lua_Spine1
+      position: {x: -0.12702979, y: -0.000000007599563, z: 2.1226047e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Neck
+      parentName: Lua_Spine2
+      position: {x: -0.123237915, y: -0.0000000073015403, z: 2.0393633e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Head
+      parentName: Lua_Neck
+      position: {x: -0.08575897, y: -0.000000005215386, z: 1.4566938e-11}
+      rotation: {x: -0.0013966518, y: 0.000015819585, z: 0.011326055, w: 0.9999349}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Head_End
+      parentName: Lua_Head
+      position: {x: -0.31121135, y: -1.2978202e-15, z: 6.496274e-18}
+      rotation: {x: 0, y: 0, z: 0.9575874, w: 0.2881431}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftShoulder
+      parentName: Lua_Spine2
+      position: {x: -0.026543578, y: -0.07464962, z: 0.00020853303}
+      rotation: {x: 0.114414945, y: -0.11441494, z: 0.6977889, w: 0.6977889}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftArm
+      parentName: Lua_LeftShoulder
+      position: {x: -0.03756129, y: 2.842171e-16, z: -3.739475e-10}
+      rotation: {x: -0.000000007450579, y: 0.20354445, z: -0.000000009313224, w: 0.9790657}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftForeArm
+      parentName: Lua_LeftArm
+      position: {x: -0.25720835, y: 4.5474734e-15, z: 0.000000009536743}
+      rotation: {x: 0.0000000061090106, y: 0.00007624923, z: 0.0000000072158475, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftHand
+      parentName: Lua_LeftForeArm
+      position: {x: -0.22230822, y: 3.694822e-15, z: 0.0000000041650114}
+      rotation: {x: 0, y: 0.0012472548, z: -0, w: 0.9999992}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_LeftHand_End
+      parentName: Lua_LeftHand
+      position: {x: -0.12816028, y: 1.5931163e-15, z: -1.1146639e-15}
+      rotation: {x: 0.008201837, y: -0.008201837, z: -0.70705926, w: 0.70705926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightShoulder
+      parentName: Lua_Spine2
+      position: {x: -0.026539916, y: 0.07464957, z: -0.00020858062}
+      rotation: {x: 0.6974665, y: -0.6974665, z: 0.116364054, w: 0.116364054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightArm
+      parentName: Lua_RightShoulder
+      position: {x: -0.037561722, y: -8.5265126e-16, z: 0.000000004708309}
+      rotation: {x: 0.000000014901156, y: -0.20354496, z: -0.00000008940694, w: 0.97906566}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightForeArm
+      parentName: Lua_RightArm
+      position: {x: -0.25720802, y: -3.694822e-15, z: -0.000000014305114}
+      rotation: {x: -0.000000002450114, y: -0.00007592139, z: 0.00000006138961, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightHand
+      parentName: Lua_RightForeArm
+      position: {x: -0.22230764, y: -4.5474734e-15, z: -0.000000014054608}
+      rotation: {x: 0, y: -0.0012473344, z: -0, w: 0.9999992}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightHand_End
+      parentName: Lua_RightHand
+      position: {x: -0.12816067, y: -1.7491982e-15, z: -1.4768148e-15}
+      rotation: {x: 0.0082018925, y: 0.0082018925, z: 0.70705926, w: 0.70705926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightUpLeg
+      parentName: Lua_Hips
+      position: {x: 0.023649195, y: -0.05250964, z: -0.00027025683}
+      rotation: {x: -0.6185114, y: -0.34065664, z: 0.33546668, w: 0.6235855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightLeg
+      parentName: Lua_RightUpLeg
+      position: {x: -0.41513923, y: 0.000000053459697, z: -0.00000017166137}
+      rotation: {x: 0, y: 0, z: -0.021620475, w: 0.9997663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightFoot
+      parentName: Lua_RightLeg
+      position: {x: -0.4511645, y: 0.00000005766635, z: -0.00000019073485}
+      rotation: {x: 0.94035804, y: 0.3401865, z: 2.0831778e-17, w: 5.757984e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightToeBase
+      parentName: Lua_RightFoot
+      position: {x: -0.08014255, y: 0.000000007247456, z: 0.00000000476837}
+      rotation: {x: 0, y: 0, z: -0.46787792, w: 0.8837931}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_RightFoot_End
+      parentName: Lua_RightToeBase
+      position: {x: -0.06525099, y: -3.3236756e-17, z: -8.0411916e-10}
+      rotation: {x: 0.706935, y: 0.015586448, z: 0.706935, w: -0.015586449}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Reference
+      parentName: lua(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_HipsEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.001738255, y: 0.94101715, z: -0.029852983}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftAnkleEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.05010387, y: 0.075369835, z: -0.057901733}
+      rotation: {x: -0.000000044703484, y: -0.000000022351742, z: 0.00000008940697,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightAnkleEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.046628237, y: 0.0753698, z: -0.057908844}
+      rotation: {x: -0.000000059604645, y: -0.000000022351742, z: 0.000000044703484,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftWristEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.59070337, y: 1.4080142, z: -0.041427217}
+      rotation: {x: 1.2703591e-33, y: 0.000000014901161, z: -1.7396136e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightWristEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.5858131, y: 1.4080098, z: -0.041426048}
+      rotation: {x: 3.649732e-24, y: -0.000000029802322, z: 1.1654406e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftKneeEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.05010398, y: 0.5258981, z: -0.03393568}
+      rotation: {x: 3.19883e-15, y: -0.000000029802322, z: 0.00000010430813, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightKneeEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.046628237, y: 0.52589756, z: -0.033942733}
+      rotation: {x: -0.000000029802317, y: -0.000000029802319, z: 0.000000029802317,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftElbowEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.36843076, y: 1.4080142, z: -0.04540883}
+      rotation: {x: 2.42935e-20, y: 0.000000014901159, z: 2.942754e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightElbowEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.36354113, y: 1.4080098, z: -0.045407504}
+      rotation: {x: -1.1102003e-16, y: -0.000000029802319, z: -3.1904591e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_ChestOriginEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.0024448084, y: 1.1312026, z: -0.029717838}
+      rotation: {x: 8.612732e-17, y: -2.775557e-17, z: 0.000000029802322, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_ChestEndEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.0024448584, y: 1.4080119, z: -0.029717855}
+      rotation: {x: 8.612732e-17, y: -2.775557e-17, z: 0.000000029802322, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftFootEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.05010387, y: 0.011140923, z: -0.009969721}
+      rotation: {x: -2.1233015e-15, y: -0.000000033527613, z: 0.000000063329935, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightFootEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.046628237, y: 0.011140895, z: -0.009976816}
+      rotation: {x: -2.984664e-15, y: -0.000000069668666, z: 0.000000042840835, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftShoulderEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.11122218, y: 1.4080137, z: -0.045407686}
+      rotation: {x: -1.2703591e-33, y: 0.000000014901161, z: 1.7396136e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightShoulderEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.106333, y: 1.4080101, z: -0.04540768}
+      rotation: {x: 5.081394e-33, y: -0.000000029802319, z: 3.479226e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_HeadEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.0024450847, y: 1.5904671, z: -0.029717654}
+      rotation: {x: 1.6939404e-16, y: -5.551116e-17, z: -0.000000059604645, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftHipEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.050104402, y: 0.9410173, z: -0.029852962}
+      rotation: {x: 0.000000014901161, y: -0.000000044703484, z: 0.000000074505806,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightHipEffector
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: 0.046627894, y: 0.941017, z: -0.029853005}
+      rotation: {x: -0.000000029802317, y: -0.000000029802319, z: 0.000000029802319,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Hips
+      parentName: Lua_Character_Ctrl_Reference
+      position: {x: -0.0017382215, y: 0.97227913, z: -0.029717853}
+      rotation: {x: 3.061617e-17, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftUpLeg
+      parentName: Lua_Character_Ctrl_Hips
+      position: {x: -0.048366144, y: -0.03126175, z: -0.00013510943}
+      rotation: {x: 0.00000001490116, y: -0.000000044710756, z: 0.000000074505806,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftLeg
+      parentName: Lua_Character_Ctrl_LeftUpLeg
+      position: {x: 8.881784e-18, y: -0.41511896, z: -0.004103942}
+      rotation: {x: -0.0000000149011585, y: 0.000000014901161, z: 0.000000029802322,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftFoot
+      parentName: Lua_Character_Ctrl_LeftLeg
+      position: {x: -0, y: -0.45052794, z: -0.023966007}
+      rotation: {x: -0.000000044703484, y: 4.4207407e-16, z: -0.000000014901161, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftToeBase
+      parentName: Lua_Character_Ctrl_LeftFoot
+      position: {x: -8.881784e-18, y: -0.06422891, z: 0.047932018}
+      rotation: {x: 8.328462e-16, y: -0.000000031937926, z: -0.000000026077029, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightUpLeg
+      parentName: Lua_Character_Ctrl_Hips
+      position: {x: 0.04836612, y: -0.03126213, z: -0.00013514757}
+      rotation: {x: -0.000000029802315, y: -0.000000029809595, z: 0.000000029802319,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightLeg
+      parentName: Lua_Character_Ctrl_RightUpLeg
+      position: {x: 8.881784e-18, y: -0.41511896, z: -0.004103899}
+      rotation: {x: -1.700029e-16, y: 2.6242004e-17, z: 2.9190774e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightFoot
+      parentName: Lua_Character_Ctrl_RightLeg
+      position: {x: -0, y: -0.45052752, z: -0.023966001}
+      rotation: {x: -0.000000029802322, y: -4.806575e-16, z: 0.000000014901167, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightToeBase
+      parentName: Lua_Character_Ctrl_RightFoot
+      position: {x: 8.881784e-18, y: -0.06422889, z: 0.047932014}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Spine
+      parentName: Lua_Character_Ctrl_Hips
+      position: {x: -0.00070654746, y: 0.15892334, z: 0}
+      rotation: {x: -2.489498e-17, y: -2.7755574e-17, z: 0.000000029802322, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Spine1
+      parentName: Lua_Character_Ctrl_Spine
+      position: {x: -2.7755575e-19, y: 0.12323783, z: 0}
+      rotation: {x: 3.061617e-17, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Spine2
+      parentName: Lua_Character_Ctrl_Spine1
+      position: {x: -0, y: 0.12702972, z: 0}
+      rotation: {x: 3.061617e-17, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftShoulder
+      parentName: Lua_Character_Ctrl_Spine2
+      position: {x: -0.07464991, y: 0.026543578, z: 0}
+      rotation: {x: 4.3893578e-16, y: 0.000000014959369, z: -0.000000029341866, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftArm
+      parentName: Lua_Character_Ctrl_LeftShoulder
+      position: {x: -0.034127403, y: 0, z: -0.015689828}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftForeArm
+      parentName: Lua_Character_Ctrl_LeftArm
+      position: {x: -0.25720835, y: 0, z: 0}
+      rotation: {x: 1.2325952e-32, y: 3.7144092e-38, z: -1.4402936e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_LeftHand
+      parentName: Lua_Character_Ctrl_LeftForeArm
+      position: {x: -0.22227256, y: 0, z: 0.0039815092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightShoulder
+      parentName: Lua_Character_Ctrl_Spine2
+      position: {x: 0.07464986, y: 0.026539916, z: -0.000000047683713}
+      rotation: {x: -4.5733543e-16, y: -0.0000000148429535, z: -0.00000003081162,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightArm
+      parentName: Lua_Character_Ctrl_RightShoulder
+      position: {x: 0.0341279, y: 0, z: -0.0156898}
+      rotation: {x: -2.3381566e-32, y: -0.000000014901158, z: 1.7396126e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightForeArm
+      parentName: Lua_Character_Ctrl_RightArm
+      position: {x: 0.257208, y: -5.684342e-16, z: 8.881784e-18}
+      rotation: {x: 1.553433e-20, y: -3.469447e-18, z: -3.190815e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_RightHand
+      parentName: Lua_Character_Ctrl_RightForeArm
+      position: {x: 0.222272, y: 0, z: 0.0039814995}
+      rotation: {x: -1.2325952e-32, y: 6.123234e-17, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Neck
+      parentName: Lua_Character_Ctrl_Spine2
+      position: {x: -0, y: 0.123237915, z: 0}
+      rotation: {x: 3.061617e-17, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lua_Character_Ctrl_Head
+      parentName: Lua_Character_Ctrl_Neck
+      position: {x: -0, y: 0.08575897, z: 0}
+      rotation: {x: 3.0616165e-17, y: -2.7372988e-24, z: -0.00000008940697, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
