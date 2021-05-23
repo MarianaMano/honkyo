@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-   public void LoadScene ()
+    private void Update()
     {
-        SceneManager.LoadScene("Honkyo");
+        LoadScene();
+
+    }
+    public void LoadScene ()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+            SceneManager.LoadScene("Honkyo");
 
     }
 

@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Play : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public void LoadScene()
+    private void Update()
     {
-        SceneManager.LoadScene("Honkyo");
+        LoadScene();
+
+    }
+    public void LoadScene()
+
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            SceneManager.LoadScene("Honkyo");
+        }
+          
 
     }
 

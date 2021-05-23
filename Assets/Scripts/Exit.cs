@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Exit : MonoBehaviour
 {
-    public void Fechar()
+    private void Update()
     {
+        Fechar();
+
+    }
+    public void Fechar()
+
+    {
+        if (Input.GetKeyDown(KeyCode.E))
             Application.Quit();
         
 
