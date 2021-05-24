@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-
-public class Creditos : MonoBehaviour
+public class returnto : MonoBehaviour
 {
     private void Update()
     {
@@ -12,14 +10,14 @@ public class Creditos : MonoBehaviour
 
     }
     public void LoadScene()
+
     {
-        if (Input.GetKeyDown(KeyCode.C))
-            SceneManager.LoadScene("Créditos");
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Menu Inicial");
+        }
 
 
     }
-}
-
-    
-            
+    }
 
