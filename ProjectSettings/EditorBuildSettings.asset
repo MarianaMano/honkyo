@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Cr\xE9ditos.unity"
     guid: 88b7d49f69483104a875300c02afe5cd
   - enabled: 0
-    path: Assets/Scenes/Final.unity
+    path: Assets/Scenes/Final_4.unity
     guid: 09e892c5040bd8140b230999aedd74a5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: c010bc0ee5afef64e8ca34aa557d88a0
   - enabled: 1
