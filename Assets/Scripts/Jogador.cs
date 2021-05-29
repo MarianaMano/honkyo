@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 public class Jogador : MonoBehaviour
 {
 
+    Vector3 jogadorPosicaoOriginal;
+    Quaternion jogadorOrientacaoOriginal;
+
     void Start()
     {
-        
+        jogadorPosicaoOriginal = transform.position;
+        jogadorOrientacaoOriginal = transform.rotation;
     }
 
     void Update()
@@ -20,7 +24,9 @@ public class Jogador : MonoBehaviour
     {
         if (other.CompareTag("Respawn"))
         {
-            SceneManager.LoadScene("Game Over");
+            transform.position = jogadorPosicaoOriginal;
+            transform.rotation = jogadorOrientacaoOriginal;
+            // SceneManager.LoadScene("Game Over");
         }
     }
 }
