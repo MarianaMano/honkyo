@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Jogador : MonoBehaviour
 {
 
+    CharacterController controlador;
     Vector3 jogadorPosicaoOriginal;
     Quaternion jogadorOrientacaoOriginal;
 
@@ -17,8 +18,11 @@ public class Jogador : MonoBehaviour
 
     void Start()
     {
+        controlador = GetComponent<CharacterController>();
+        
         jogadorPosicaoOriginal = transform.position;
         jogadorOrientacaoOriginal = transform.rotation;
+        Debug.Log("posição " + jogadorPosicaoOriginal);
     }
 
     void Update()
@@ -26,18 +30,24 @@ public class Jogador : MonoBehaviour
         
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.CompareTag("Respawn"))
         {
             transform.position = jogadorPosicaoOriginal;
-            transform.rotation = jogadorOrientacaoOriginal;
+            Debug.Log("posição alvo " + transform.position);
+
+            // controlador.Move(jogadorPosicaoOriginal); 
+            
             // SceneManager.LoadScene("Game Over");
         }
 
         if (other.CompareTag("Coletavel"))
         {
             other.gameObject.SetActive(false);
+            AtualizaObjetos();
 
         }
     }
