@@ -36,6 +36,10 @@ public class e : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
                 Application.Quit();
 
+            if (Input.GetKeyDown(KeyCode.H))
+
+                SceneManager.LoadScene("Help");
+
             if (Input.GetKeyDown(KeyCode.R))
             {
                     panel.gameObject.SetActive(false);

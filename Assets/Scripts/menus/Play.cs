@@ -13,7 +13,7 @@ public class Play : MonoBehaviour
     public void LoadScene()
 
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             SceneManager.LoadScene("Honkyo");
         }

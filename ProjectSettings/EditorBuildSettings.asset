@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: "Assets/Scenes/Cr\xE9ditos.unity"
     guid: 88b7d49f69483104a875300c02afe5cd
   - enabled: 0
-    path: Assets/Scenes/Final_4.unity
+    path: 
     guid: 09e892c5040bd8140b230999aedd74a5
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: 241eb2f74b746164ab673c65b7cff34f
   m_configObjects: {}
