@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,9 +130,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113427292}
-  - component: {fileID: 113427295}
   - component: {fileID: 113427294}
   - component: {fileID: 113427293}
+  - component: {fileID: 113427295}
   m_Layer: 0
   m_Name: Jogador
   m_TagString: Untagged
@@ -932,6 +932,65 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 867847406}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &867847408 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1132fbe6bc2f5014f8a7d7352a9aa1dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 867847406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &867847409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867847408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!23 &867847410
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867847408}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &876199750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3057,13 +3116,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847189673}
-  m_LocalRotation: {x: -0.2390584, y: -0.6598332, z: 0.67294264, w: 0.23370822}
-  m_LocalPosition: {x: 130.3, y: 9.2, z: -38}
+  m_LocalRotation: {x: 0.07123615, y: -0.70350945, z: 0.028155012, w: 0.706546}
+  m_LocalPosition: {x: 11.6, y: -0.4, z: -20.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 113427292}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50.925003, y: -88.642006, z: 91.818}
+  m_LocalEulerAnglesHint: {x: 8.064, y: -90.00001, z: -3.5000002}
 --- !u!114 &1847189677
 MonoBehaviour:
   m_ObjectHideFlags: 0
