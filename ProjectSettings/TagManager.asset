@@ -8,9 +8,7 @@ TagManager:
   - menupausa
   - Coletavel
   - Trampolim
-  - Portal (1)
-  - Portal (2)
-  - Portal (3)
+  - Portal1
   layers:
   - Default
   - TransparentFX

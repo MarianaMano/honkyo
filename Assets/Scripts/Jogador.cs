@@ -13,9 +13,6 @@ public class Jogador : MonoBehaviour
 
     MoverJogador controlaJogador;
 
-    GameObject jogador;
-
-
     [SerializeField]
     Text objetosTexto;
 
@@ -38,7 +35,6 @@ public class Jogador : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("qualquer coisa " + other.tag);
         if(other.tag == "Respawn")
         {
             StartCoroutine(Transporta());
@@ -52,11 +48,14 @@ public class Jogador : MonoBehaviour
 
         }
 
-        if (other.gameObject.CompareTag("Portal (1)"))
+        //MUDAR DE PORTAL
+
+        if (other.tag == "Portal1")
         {
             Debug.Log("portal 1");
-            jogador.transform.position = new Vector3(-31, -5, -9);
+            
         }
+
     }
 
     private IEnumerator Transporta()
@@ -71,6 +70,8 @@ public class Jogador : MonoBehaviour
         GetComponent<MoverJogador>().enabled = true;
     }
 
+    //DESBLOQUEAR PORTAL   
+
     private void AtualizaObjetos()
     {
         contaObjetos ++;
@@ -81,19 +82,6 @@ public class Jogador : MonoBehaviour
 
         }
     }
-
-    /*Portal
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Portal (1)"))
-        {
-            Debug.Log("portal 1");
-            transform.SetPositionAndRotation(new Vector3(-31, -5, -9), new Quaternion(0, -90, 0, 0 ));
-
-        }
-    }
-     */
 
 
 }
