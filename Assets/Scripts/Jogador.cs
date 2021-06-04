@@ -11,6 +11,9 @@ public class Jogador : MonoBehaviour
     Vector3 jogadorPosicaoOriginal;
     Quaternion jogadorOrientacaoOriginal;
 
+    MoverJogador controlaJogador;
+
+
     [SerializeField]
     Text objetosTexto;
 
@@ -22,7 +25,6 @@ public class Jogador : MonoBehaviour
         
         jogadorPosicaoOriginal = transform.position;
         jogadorOrientacaoOriginal = transform.rotation;
-        Debug.Log("posição " + jogadorPosicaoOriginal);
     }
 
     void Update()
@@ -34,22 +36,31 @@ public class Jogador : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Respawn"))
+        Debug.Log("qualquer coisa " + other.tag);
+        if(other.tag == "Respawn")
         {
-            transform.position = jogadorPosicaoOriginal;
-            Debug.Log("posição alvo " + transform.position);
-
-            // controlador.Move(jogadorPosicaoOriginal); 
-            
-            // SceneManager.LoadScene("Game Over");
+            StartCoroutine(Transporta());
         }
+        
 
-        if (other.CompareTag("Coletavel"))
+        if (other.gameObject.CompareTag("Coletavel"))
         {
             other.gameObject.SetActive(false);
             AtualizaObjetos();
 
         }
+    }
+
+    private IEnumerator Transporta()
+    {
+        GetComponent<MoverJogador>().enabled = false;
+
+        transform.position = jogadorPosicaoOriginal;
+        transform.rotation = jogadorOrientacaoOriginal;
+
+        yield return new WaitForSeconds(0.1f);
+
+        GetComponent<MoverJogador>().enabled = true;
     }
 
     private void AtualizaObjetos()

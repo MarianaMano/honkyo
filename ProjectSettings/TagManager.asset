@@ -7,6 +7,8 @@ TagManager:
   - SoundTrigger
   - menupausa
   - Coletavel
+  - PerderVidas
+  - Trampolim
   layers:
   - Default
   - TransparentFX
