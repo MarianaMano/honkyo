@@ -7,8 +7,10 @@ TagManager:
   - SoundTrigger
   - menupausa
   - Coletavel
-  - PerderVidas
   - Trampolim
+  - Portal (1)
+  - Portal (2)
+  - Portal (3)
   layers:
   - Default
   - TransparentFX
