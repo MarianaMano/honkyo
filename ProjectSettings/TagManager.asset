@@ -16,6 +16,7 @@ TagManager:
   - Portal2
   - Portal3
   - PortalMain
+  - coverPortal
   layers:
   - Default
   - TransparentFX

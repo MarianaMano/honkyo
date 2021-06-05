@@ -16,6 +16,9 @@ public class Jogador : MonoBehaviour
     MoverJogador controlaJogador;
 
     [SerializeField]
+    GameObject coverPortal;
+
+    [SerializeField]
     Text objetosTexto;
 
     private int contaObjetos = 0;
@@ -32,6 +35,7 @@ public class Jogador : MonoBehaviour
         
         jogadorPosicaoOriginal = transform.position;
         jogadorOrientacaoOriginal = transform.rotation;
+
     }
 
     void Update()
@@ -72,14 +76,13 @@ public class Jogador : MonoBehaviour
         {
             other.gameObject.SetActive(false);
 
-            //somcoletavel.gameObject.GetComponent<AudioSource>().Play();
-        }
+            vidas = vidas - 1;
+            if (vidas <= 0)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
 
-        //MUDAR CENA FINAL - PORTAL
-        
-        if (other.gameObject.CompareTag("PortalMain"))
-        {
-            SceneManager.LoadScene("Final_1");
+            //somcoletavel.gameObject.GetComponent<AudioSource>().Play();
         }
 
     }
@@ -104,10 +107,13 @@ public class Jogador : MonoBehaviour
     {
         contaObjetos ++;
         objetosTexto.text = "collected items:" + contaObjetos.ToString();
-        if (GameObject.FindGameObjectsWithTag("Coletavel").Length <= 0) //dizia >= 3
+        if (GameObject.FindGameObjectsWithTag("Coletavel").Length >= 3)
         {
-            // tirar a porta que dá acesso ao portal
-
+            coverPortal.SetActive(false);
+        }
+        else
+        {
+            coverPortal.SetActive(true);
         }
     }
 
@@ -121,13 +127,14 @@ public class Jogador : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
 
-        /*
-        //MUDAR CENA FINAL
+        //MUDAR CENA FINAL - PORTAL
+
         if (collision.gameObject.CompareTag("PortalMain"))
         {
+            Debug.Log("mudar cena");
             SceneManager.LoadScene("Final_1");
         }
-        */
+
     }
 
 

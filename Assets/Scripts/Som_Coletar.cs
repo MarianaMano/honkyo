@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Som_Coletar : MonoBehaviour
 {
-    [SerializeField]
+    
    
 
     // Start is called before the first frame update
@@ -19,11 +19,9 @@ public class Som_Coletar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Jogador"))
-            
+        if(other.CompareTag("Jogador"))  
         {
-       GetComponent<AudioSource>().Play();
-
+            GetComponent<AudioSource>().Play();
         }
     }
 }
