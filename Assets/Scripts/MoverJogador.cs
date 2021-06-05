@@ -122,6 +122,8 @@ public class MoverJogador : MonoBehaviour
 
     }
 
+    //TRAMPOLIM SIMULADO
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Trampolim")
