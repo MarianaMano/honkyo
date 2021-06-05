@@ -107,6 +107,17 @@ public class Jogador : MonoBehaviour
     {
         contaObjetos ++;
         objetosTexto.text = "collected items:" + contaObjetos.ToString();
+
+        if (contaObjetos >= 3)
+        {
+            coverPortal.SetActive(false);
+        }
+        else
+        {
+            coverPortal.SetActive(true);
+        }
+        
+        /*
         if (GameObject.FindGameObjectsWithTag("Coletavel").Length >= 3)
         {
             coverPortal.SetActive(false);
@@ -115,6 +126,7 @@ public class Jogador : MonoBehaviour
         {
             coverPortal.SetActive(true);
         }
+        */
     }
 
 
