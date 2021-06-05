@@ -58,8 +58,10 @@ public class MoverJogador : MonoBehaviour
             // se a direção por diferente de 0 e não estivermos a carregar em Shift
             if (direcaoMovimento != Vector3.zero && !Input.GetKey(KeyCode.LeftShift))
             {
+        
                 // estamos a andar
                 Andar();
+              
 
 
             }
@@ -98,6 +100,7 @@ public class MoverJogador : MonoBehaviour
     {
         velocidadeMovimento = andarVelocidade;
         animacao.SetFloat("Velocidade", 0.5f);
+      
     }
     private void Correr()
     {

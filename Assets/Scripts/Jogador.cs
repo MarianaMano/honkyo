@@ -34,8 +34,9 @@ public class Jogador : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
 
-        if(other.tag == "Respawn")
+        if (other.tag == "Respawn")
         {
             StartCoroutine(Transporta());
         }
@@ -56,6 +57,8 @@ public class Jogador : MonoBehaviour
             
         }
 
+       
+      
     }
 
     private IEnumerator Transporta()
@@ -83,6 +86,7 @@ public class Jogador : MonoBehaviour
         }
     }
 
+    
 
 }
 
