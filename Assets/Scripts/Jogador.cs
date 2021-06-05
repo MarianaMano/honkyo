@@ -66,7 +66,13 @@ public class Jogador : MonoBehaviour
            somcoletavel.gameObject.GetComponent<AudioSource>().Play();
         }
         
-        
+        //OBSTACULOS
+        /*
+        if (other.gameObject.CompareTag("Obstaculo"))
+        {
+            Play.
+        }
+        */
 
         //BOMBAS
         if (other.gameObject.CompareTag("Bomba"))
