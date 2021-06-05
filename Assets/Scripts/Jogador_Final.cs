@@ -2,28 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Som_Coletar : MonoBehaviour
+public class Jogador_Final : MonoBehaviour
 {
-    [SerializeField]
-   
-
     // Start is called before the first frame update
-   
+    void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()
     {
         
-       
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-            
+        //MUDAR DE PORTAL
+
+        if (other.tag == "Portal1")
         {
-       GetComponent<AudioSource>().Play();
+            Debug.Log("portal 1");
 
         }
     }
+
 }

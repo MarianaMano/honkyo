@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource somcoletavel;
 
     CharacterController controlador;
     Vector3 jogadorPosicaoOriginal;
@@ -18,6 +20,12 @@ public class Jogador : MonoBehaviour
 
     private int contaObjetos = 0;
 
+    [SerializeField]
+    Text vidasTexto;
+
+    private int vidas = 3;
+
+
     void Start()
     {
         controlador = GetComponent<CharacterController>();
@@ -28,38 +36,49 @@ public class Jogador : MonoBehaviour
 
     void Update()
     {
-        
+        vidasTexto.text = vidas.ToString();
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
         
+         //RESPAWN
 
         if (other.tag == "Respawn")
         {
             StartCoroutine(Transporta());
+            
+            vidas = vidas - 1;
+            if (vidas <= 0)
+            {
+                SceneManager.LoadScene("Game Over");
+            }
         }
         
+        //COLETAVEL
 
         if (other.gameObject.CompareTag("Coletavel"))
         {
             other.gameObject.SetActive(false);
             AtualizaObjetos();
 
+           somcoletavel.gameObject.GetComponent<AudioSource>().Play();
         }
+        
+        
 
-        //MUDAR DE PORTAL
-
-        if (other.tag == "Portal1")
+        //BOMBAS
+        if (other.gameObject.CompareTag("Bomba"))
         {
-            Debug.Log("portal 1");
-            
+            other.gameObject.SetActive(false);
+
+            //somcoletavel.gameObject.GetComponent<AudioSource>().Play();
         }
 
-       
-      
     }
+
+    //RESPAWN
 
     private IEnumerator Transporta()
     {
@@ -73,7 +92,7 @@ public class Jogador : MonoBehaviour
         GetComponent<MoverJogador>().enabled = true;
     }
 
-    //DESBLOQUEAR PORTAL   
+    //COLETAVEL + DESBLOQUEAR PORTAL   
 
     private void AtualizaObjetos()
     {
@@ -86,6 +105,18 @@ public class Jogador : MonoBehaviour
         }
     }
 
+    //PERDER VIDAS
+    /*
+    private void ContaVidas()
+    {
+        vidasTexto.text = vidas.ToString();
+        vidas = vidas - 1;
+        if (vidas <= 0)
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+    }
+    */
     
 
 }

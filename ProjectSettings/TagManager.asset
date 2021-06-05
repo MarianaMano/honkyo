@@ -9,6 +9,7 @@ TagManager:
   - Coletavel
   - Trampolim
   - Portal1
+  - Bomba
   layers:
   - Default
   - TransparentFX

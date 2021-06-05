@@ -61,7 +61,9 @@ public class MoverJogador : MonoBehaviour
         
                 // estamos a andar
                 Andar();
-              
+                GetComponent<AudioSource>().Play();
+                // parar o som de correr
+
 
 
             }
@@ -69,11 +71,14 @@ public class MoverJogador : MonoBehaviour
             {
                 // estamos a correr
                 Correr();
+              // parar o som de andar 
             }
             else if (direcaoMovimento == Vector3.zero)
             {
                 // estamos parados
                 Parado();
+                GetComponent<AudioSource>().Stop();
+                // parar os sons 
             }
 
             direcaoMovimento *= velocidadeMovimento;
@@ -100,7 +105,8 @@ public class MoverJogador : MonoBehaviour
     {
         velocidadeMovimento = andarVelocidade;
         animacao.SetFloat("Velocidade", 0.5f);
-      
+        GetComponent<AudioSource>().Play();
+
     }
     private void Correr()
     {
