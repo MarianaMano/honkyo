@@ -65,21 +65,21 @@ public class Jogador : MonoBehaviour
 
            somcoletavel.gameObject.GetComponent<AudioSource>().Play();
         }
-        
-        //OBSTACULOS
-        /*
-        if (other.gameObject.CompareTag("Obstaculo"))
-        {
-            Play.
-        }
-        */
 
         //BOMBAS
+
         if (other.gameObject.CompareTag("Bomba"))
         {
             other.gameObject.SetActive(false);
 
             //somcoletavel.gameObject.GetComponent<AudioSource>().Play();
+        }
+
+        //MUDAR CENA FINAL - PORTAL
+        
+        if (other.gameObject.CompareTag("PortalMain"))
+        {
+            SceneManager.LoadScene("Final_1");
         }
 
     }
@@ -111,19 +111,25 @@ public class Jogador : MonoBehaviour
         }
     }
 
-    //PERDER VIDAS
-    /*
-    private void ContaVidas()
+
+    private void OnCollisionEnter(Collision collision)
     {
-        vidasTexto.text = vidas.ToString();
-        vidas = vidas - 1;
-        if (vidas <= 0)
+        
+        //INIMIGO
+        if (collision.gameObject.CompareTag("Inimigo"))
         {
             SceneManager.LoadScene("Game Over");
         }
+
+        /*
+        //MUDAR CENA FINAL
+        if (collision.gameObject.CompareTag("PortalMain"))
+        {
+            SceneManager.LoadScene("Final_1");
+        }
+        */
     }
-    */
-    
+
 
 }
 

@@ -12,6 +12,10 @@ TagManager:
   - Bomba
   - Obstaculo
   - Jogador
+  - Inimigo
+  - Portal2
+  - Portal3
+  - PortalMain
   layers:
   - Default
   - TransparentFX
