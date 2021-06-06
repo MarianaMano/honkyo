@@ -2,8 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))] // impede o utilizador de remover o audiosource do jogador
+
+
 public class MoverJogador : MonoBehaviour
 {
+    [SerializeField]
+    private AudioClip somSalto;
+    [SerializeField]
+    private AudioClip somAndar;
+
+    private AudioSource som;
+
 
     [SerializeField] private float velocidadeMovimento;
     [SerializeField] private float andarVelocidade;
@@ -21,13 +31,14 @@ public class MoverJogador : MonoBehaviour
     private CharacterController controlador;
     private Animator animacao;
 
-    [SerializeField]
-    AudioSource andar;
+   
 
     void Start()
     {
         controlador = GetComponent<CharacterController>();
         animacao = GetComponentInChildren<Animator>();
+        som = GetComponent<AudioSource>();
+
     }
 
 
@@ -63,24 +74,25 @@ public class MoverJogador : MonoBehaviour
         
                 // estamos a andar
                 Andar();
-                GetComponent<AudioSource>().Play();
-                // parar o som de correr
 
-
+                som.clip = somAndar; // atribuimos ao som o som de andar 
+                if (!som.isPlaying) som.Play(); // se o som nao estiver a tocar então toca
+                
 
             }
             else if (direcaoMovimento != Vector3.zero && Input.GetKey(KeyCode.LeftShift))
             {
                 // estamos a correr
                 Correr();
-              // parar o som de andar 
+                
+           
             }
             else if (direcaoMovimento == Vector3.zero)
             {
                 // estamos parados
                 Parado();
-                //GetComponent<AudioSource>().Stop();
-                // parar os sons 
+
+                som.Stop(); // paramos o som quando paramos de andar
             }
 
             direcaoMovimento *= velocidadeMovimento;
@@ -88,6 +100,9 @@ public class MoverJogador : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Saltar(-2);
+                som.clip = somSalto;
+                if (!som.isPlaying) som.Play();
+
             }
 
         } 
@@ -107,7 +122,7 @@ public class MoverJogador : MonoBehaviour
     {
         velocidadeMovimento = andarVelocidade;
         animacao.SetFloat("Velocidade", 0.5f);
-        GetComponent<AudioSource>().Play();
+       
 
     }
     private void Correr()
@@ -121,6 +136,7 @@ public class MoverJogador : MonoBehaviour
 
         animacao.SetTrigger("Saltar");
         velocidade.y = Mathf.Sqrt(saltoAltura * salto * gravidade);
+
 
 
     }

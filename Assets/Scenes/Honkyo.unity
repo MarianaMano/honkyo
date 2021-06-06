@@ -27878,6 +27878,16 @@ PrefabInstance:
       propertyPath: andar
       value: 
       objectReference: {fileID: 1483831428}
+    - target: {fileID: 5261804209133436904, guid: bc2e2070fddf1cf43b2cc30e87456c56,
+        type: 3}
+      propertyPath: somAndar
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bc7fc036011e964898e59ce5bd1b5e7, type: 3}
+    - target: {fileID: 5261804209133436904, guid: bc2e2070fddf1cf43b2cc30e87456c56,
+        type: 3}
+      propertyPath: somSalto
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f389c64c8cbee24ea593118cc9e1c0f, type: 3}
     - target: {fileID: 5261804209133436906, guid: bc2e2070fddf1cf43b2cc30e87456c56,
         type: 3}
       propertyPath: m_RootOrder
@@ -27958,5 +27968,20 @@ PrefabInstance:
       propertyPath: somcoletavel
       value: 
       objectReference: {fileID: 1420355840}
+    - target: {fileID: 5261804209133436910, guid: bc2e2070fddf1cf43b2cc30e87456c56,
+        type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261804209133436910, guid: bc2e2070fddf1cf43b2cc30e87456c56,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5261804209133436910, guid: bc2e2070fddf1cf43b2cc30e87456c56,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2e2070fddf1cf43b2cc30e87456c56, type: 3}
