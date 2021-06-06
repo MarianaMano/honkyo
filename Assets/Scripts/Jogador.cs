@@ -117,16 +117,6 @@ public class Jogador : MonoBehaviour
             coverPortal.SetActive(true);
         }
         
-        /*
-        if (GameObject.FindGameObjectsWithTag("Coletavel").Length >= 3)
-        {
-            coverPortal.SetActive(false);
-        }
-        else
-        {
-            coverPortal.SetActive(true);
-        }
-        */
     }
 
 
