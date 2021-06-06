@@ -8,6 +8,9 @@ public class Jogador : MonoBehaviour
 {
     [SerializeField]
     AudioSource somcoletavel;
+    [SerializeField]
+    AudioSource sombomba;
+
 
     CharacterController controlador;
     Vector3 jogadorPosicaoOriginal;
@@ -82,7 +85,7 @@ public class Jogador : MonoBehaviour
                 SceneManager.LoadScene("Game Over");
             }
 
-            //somcoletavel.gameObject.GetComponent<AudioSource>().Play();
+            sombomba.gameObject.GetComponent<AudioSource>().Play();
         }
 
     }

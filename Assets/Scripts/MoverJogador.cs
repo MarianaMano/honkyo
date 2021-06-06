@@ -21,6 +21,8 @@ public class MoverJogador : MonoBehaviour
     private CharacterController controlador;
     private Animator animacao;
 
+    [SerializeField]
+    AudioSource andar;
 
     void Start()
     {
@@ -119,6 +121,7 @@ public class MoverJogador : MonoBehaviour
 
         animacao.SetTrigger("Saltar");
         velocidade.y = Mathf.Sqrt(saltoAltura * salto * gravidade);
+
 
     }
 
