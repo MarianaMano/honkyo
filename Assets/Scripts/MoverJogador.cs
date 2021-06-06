@@ -10,7 +10,11 @@ public class MoverJogador : MonoBehaviour
     [SerializeField]
     private AudioClip somSalto;
     [SerializeField]
+
     private AudioClip somAndar;
+
+    [SerializeField]
+    private AudioClip SomCorrer;
 
     private AudioSource som;
 
@@ -84,6 +88,9 @@ public class MoverJogador : MonoBehaviour
             {
                 // estamos a correr
                 Correr();
+
+                som.clip = SomCorrer;
+                if (!som.isPlaying) som.Play();
                 
            
             }
