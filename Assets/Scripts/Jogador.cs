@@ -56,7 +56,8 @@ public class Jogador : MonoBehaviour
         {
             StartCoroutine(Transporta());
             
-            vidas = vidas - 1;
+            vidas -= 1;
+            Debug.Log("- 1");
             if (vidas <= 0)
             {
                 SceneManager.LoadScene("Game Over");
@@ -79,13 +80,27 @@ public class Jogador : MonoBehaviour
         {
             other.gameObject.SetActive(false);
 
-            vidas = vidas - 1;
+            vidas -= 1;
             if (vidas <= 0)
             {
                 SceneManager.LoadScene("Game Over");
             }
 
             sombomba.gameObject.GetComponent<AudioSource>().Play();
+        }
+
+        //INIMIGO
+
+        if (other.tag == ("Inimigo"))
+        {
+            SceneManager.LoadScene("Game Over");
+        }
+
+        //MUDAR CENA FINAL - PORTAL
+
+        if (other.tag == ("PortalMain"))
+        {
+            SceneManager.LoadScene("Final_1");
         }
 
     }
@@ -125,12 +140,6 @@ public class Jogador : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        //INIMIGO
-        if (collision.gameObject.CompareTag("Inimigo"))
-        {
-            SceneManager.LoadScene("Game Over");
-        }
 
         //MUDAR CENA FINAL - PORTAL
 

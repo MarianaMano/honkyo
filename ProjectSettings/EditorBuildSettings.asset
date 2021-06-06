@@ -11,22 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Cr\xE9ditos.unity"
     guid: 88b7d49f69483104a875300c02afe5cd
-  - enabled: 0
-    path: 
-    guid: 09e892c5040bd8140b230999aedd74a5
+  - enabled: 1
+    path: Assets/Scenes/Honkyo.unity
+    guid: d9435f75194fb4e48b58589dd7afbf42
+  - enabled: 1
+    path: Assets/Scenes/Pausa.unity
+    guid: fb93a56670419db41b03f72b3646019f
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: 241eb2f74b746164ab673c65b7cff34f
+  - enabled: 1
+    path: Assets/Scenes/Final_1.unity
+    guid: 5d5966c03fe01f54d9b927efb42b704c
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: c010bc0ee5afef64e8ca34aa557d88a0
   - enabled: 1
-    path: Assets/Scenes/Honkyo.unity
-    guid: d9435f75194fb4e48b58589dd7afbf42
-  - enabled: 0
-    path: Assets/Scenes/jogador.unity
-    guid: de8d0af6fd0f7f34b8287fa1fcc7aefa
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Help.unity
-    guid: 241eb2f74b746164ab673c65b7cff34f
+    path: Assets/Scenes/Victory.unity
+    guid: b07a697bb4a15084e85930fb60f78f71
   m_configObjects: {}

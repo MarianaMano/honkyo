@@ -79,7 +79,7 @@ public class MoverJogador : MonoBehaviour
             {
                 // estamos parados
                 Parado();
-                GetComponent<AudioSource>().Stop();
+                //GetComponent<AudioSource>().Stop();
                 // parar os sons 
             }
 
