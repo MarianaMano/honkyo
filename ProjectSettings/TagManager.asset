@@ -17,6 +17,7 @@ TagManager:
   - Portal3
   - PortalMain
   - coverPortal
+  - PousaColetaveis
   layers:
   - Default
   - TransparentFX
