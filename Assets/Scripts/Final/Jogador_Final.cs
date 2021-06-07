@@ -21,6 +21,7 @@ public class Jogador_Final : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         c1 = coordenada1.transform.position;
         c2 = coordenada2.transform.position;
         c3 = coordenada3.transform.position;
@@ -39,20 +40,33 @@ public class Jogador_Final : MonoBehaviour
         if (other.tag == "Portal1")
         {
             Debug.Log("portal 1");
-            gameObject.transform.position = c1;
+            StartCoroutine(MudaPortal(c1));
         }
 
         if (other.tag == "Portal2")
         {
             Debug.Log("portal 2");
-            gameObject.transform.position = c2;
+            StartCoroutine(MudaPortal(c2));
         }
 
         if (other.tag == "Portal3")
         {
             Debug.Log("portal 3");
-            gameObject.transform.position = c3;
+            StartCoroutine(MudaPortal(c3));
         }
+    }
+
+    private IEnumerator MudaPortal(Vector3 jogadorPosicaoOriginal)
+    {
+        Debug.Log("posição:" + jogadorPosicaoOriginal);
+
+        GetComponent<MoverJogador>().enabled = false;
+
+        transform.position = jogadorPosicaoOriginal;
+
+        yield return new WaitForSeconds(0.1f);
+
+        GetComponent<MoverJogador>().enabled = true;
     }
 
 }

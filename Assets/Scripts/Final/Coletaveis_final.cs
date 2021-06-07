@@ -5,38 +5,21 @@ using UnityEngine;
 public class Coletaveis_final : MonoBehaviour
 {
 
-    [SerializeField]
-    private Animator maca;
+    private Animator coletaveis;
 
-    [SerializeField]
-    private Animator pomba;
-
-    [SerializeField]
-    private Animator coracao;
-
-    /*
-    private void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        if (other.tag == "PousaColetaveis")
-        {
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                maca.SetBool("playMaca", true);
-                pomba.SetBool("playPomba", true);
-                coracao.SetBool("playCoracao", true);
-            }
-        }
-        
+        coletaveis = GetComponent<Animator>();
     }
-    */
 
+   
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
-            maca.SetBool("playMaca", true);
-            pomba.SetBool("playPomba", true);
-            coracao.SetBool("playCoracao", true);
+            Debug.Log("animar");
+            coletaveis.SetBool("playAnimacao", true);
         }
     }
+    
 }
