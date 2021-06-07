@@ -11,6 +11,8 @@ public class Jogador : MonoBehaviour
     [SerializeField]
     AudioSource sombomba;
 
+   
+
 
     CharacterController controlador;
     Vector3 jogadorPosicaoOriginal;
@@ -98,6 +100,8 @@ public class Jogador : MonoBehaviour
                 SceneManager.LoadScene("Game Over");
             }
 
+            Debug.Log("CABUMM!!!");
+
             sombomba.gameObject.GetComponent<AudioSource>().Play();
         }
 
@@ -120,6 +124,10 @@ public class Jogador : MonoBehaviour
         if (other.tag == "coverPortal")
         {
             coverPortalTexto.enabled = true;
+        }
+        else
+        {
+            coverPortalTexto.enabled = false;
         }
 
     }
@@ -154,7 +162,7 @@ public class Jogador : MonoBehaviour
         {
             coverPortal.SetActive(true);
         }
-        
+  
     }
 
 
