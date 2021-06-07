@@ -37,6 +37,9 @@ public class Jogador : MonoBehaviour
 
     public Text coverPortalTexto;
 
+    
+
+
     void Start()
     {
 
@@ -161,6 +164,7 @@ public class Jogador : MonoBehaviour
         else
         {
             coverPortal.SetActive(true);
+
         }
   
     }
