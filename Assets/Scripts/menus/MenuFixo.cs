@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuFixo : MonoBehaviour
 {
 
-    [SerializeField] float temporizador = 120;
+    [SerializeField] float temporizador = 240;
     private bool contaTempo = true;
     [SerializeField] Text mostrador;
     

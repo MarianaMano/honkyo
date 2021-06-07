@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Jogador_Final : MonoBehaviour
 {
+     [SerializeField]
+     public Text textoFinalObjetos;
 
     [SerializeField]
     GameObject coordenada1;
@@ -21,6 +24,7 @@ public class Jogador_Final : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        textoFinalObjetos.enabled = false;
 
         c1 = coordenada1.transform.position;
         c2 = coordenada2.transform.position;
@@ -53,6 +57,8 @@ public class Jogador_Final : MonoBehaviour
         {
             Debug.Log("portal 3");
             StartCoroutine(MudaPortal(c3));
+            textoFinalObjetos.enabled = true;
+
         }
     }
 
