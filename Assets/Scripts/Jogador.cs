@@ -24,6 +24,8 @@ public class Jogador : MonoBehaviour
     [SerializeField]
     Text objetosTexto;
 
+    
+
     private int contaObjetos = 0;
 
     [SerializeField]
@@ -31,13 +33,23 @@ public class Jogador : MonoBehaviour
 
     private int vidas = 3;
 
+    public Text coverPortalTexto;
 
     void Start()
     {
+
+        // CANVAS COVER PORTAL
+
+        coverPortalTexto.enabled = false;
+
+        // RESPAWN
+
         controlador = GetComponent<CharacterController>();
         
         jogadorPosicaoOriginal = transform.position;
         jogadorOrientacaoOriginal = transform.rotation;
+
+
 
     }
 
@@ -103,6 +115,13 @@ public class Jogador : MonoBehaviour
             SceneManager.LoadScene("Final_1");
         }
 
+        //CANVAS COVER PORTAL
+
+        if (other.tag == "coverPortal")
+        {
+            coverPortalTexto.enabled = true;
+        }
+
     }
 
     //RESPAWN
@@ -129,6 +148,7 @@ public class Jogador : MonoBehaviour
         if (contaObjetos >= 3)
         {
             coverPortal.SetActive(false);
+
         }
         else
         {
